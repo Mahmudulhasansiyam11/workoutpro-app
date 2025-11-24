@@ -6,6 +6,7 @@ import Image from "next/image";
 // import Features from "@/Components/Features";
 import PopularWorkouts from "@/Components/PopularWorkouts"; // default import
 import Testimonials from "@/Components/Testimonials";
+import BenefitsSection from "@/Components/BenefitsSection";
 
 export default function Home() {
   return (
@@ -18,6 +19,8 @@ export default function Home() {
       <Features></Features>
       {/* Testimonials Section */}
       <Testimonials></Testimonials>
+      {/* Benefits Section */}
+      <BenefitsSection></BenefitsSection>
       
     </div>
   );
