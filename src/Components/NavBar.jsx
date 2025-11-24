@@ -5,11 +5,13 @@ import { useState, useContext, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { AuthContext } from "@/Provider/AuthContext/AuthContext";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const router = useRouter();
 
   const { user, logOut } = useContext(AuthContext);
 
@@ -17,6 +19,7 @@ const Navbar = () => {
     try {
       await logOut();
       setIsDropdownOpen(false);
+       router.push("/login");
     } catch (error) {
       console.error("Logout error:", error.message);
     }
@@ -113,7 +116,7 @@ const Navbar = () => {
                   </button>
                 </Link>
                 <Link href="/register">
-                  <button className="px-4 py-2 rounded-lg bg-white text-gray-900 font-semibold hover:bg-gray-200 transition">
+                  <button className="px-4 py-2 rounded-lg border border-white text-white hover:bg-white hover:text-gray-900 transition">
                     Register
                   </button>
                 </Link>
