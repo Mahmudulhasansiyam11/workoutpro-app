@@ -5,6 +5,7 @@ import Image from "next/image";
 // import Hero from "@/Components/Hero";
 // import Features from "@/Components/Features";
 import PopularWorkouts from "@/Components/PopularWorkouts"; // default import
+import Testimonials from "@/Components/Testimonials";
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
       <PopularWorkouts></PopularWorkouts>
       {/* Features Section */}
       <Features></Features>
+      {/* Testimonials Section */}
+      <Testimonials></Testimonials>
       
     </div>
   );

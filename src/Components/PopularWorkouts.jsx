@@ -3,6 +3,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function PopularWorkouts() {
   const [workouts, setWorkouts] = useState([]);
@@ -82,6 +83,15 @@ export default function PopularWorkouts() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* View All Workouts Button */}
+        <div className="mt-12 text-center">
+          <Link href="/workouts">
+            <button className="px-8 py-4 bg-green-500 text-white rounded-full font-semibold shadow-md hover:bg-green-600 hover:shadow-lg transition">
+              View All Workouts
+            </button>
+          </Link>
         </div>
       </div>
     </section>
