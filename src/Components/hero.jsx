@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <section
@@ -29,9 +31,9 @@ export default function Hero() {
             Get Started
           </button>
 
-          <button className="px-8 py-3 rounded-xl bg-gray-800 hover:bg-gray-700 transition text-white font-semibold text-lg">
+          <Link href="/workouts" className="px-8 py-3 rounded-xl bg-gray-800 hover:bg-gray-700 transition text-white font-semibold text-lg">
             Explore Workouts
-          </button>
+          </Link>
         </div>
       </div>
     </section>
