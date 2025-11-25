@@ -88,12 +88,19 @@ Here is a quick overview of all routes used in the project:
 
 ## Main Routes
 Route             -  	Description
+
 /	              -     Homepage
+
 /workouts         -	    All Workouts from MongoDB
+
 /plans            - 	Workout Plans (Daily, Weekly, Monthly, Yearly)
+
 /trainers         - 	View Trainers & Details
+
 /profile          -     View profile details
+
 /addWorkout       -     Add new workout
+
 /manageWorkouts   -     Manage workout view and delete
 
 
