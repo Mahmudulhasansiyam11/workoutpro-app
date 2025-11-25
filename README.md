@@ -1,3 +1,103 @@
+## 📘 WorkoutPro – Fitness Planner (Client + Server)
+
+WorkoutPro is a full-stack fitness management application built using Next.js, TailwindCSS, and Firebase Authentication.
+Users can track workouts, explore diet plans, view trainers, subscribe to plans, and more.
+This project includes both frontend UI and backend API routes deployed on Vercel.
+
+## 🚀 Features
+
+🔐 Firebase Authentication (Login/Register)
+
+🧑‍🏫 Trainers Page with filters
+
+🥗 Diet Plans with images
+
+🏋️ Workout Plans (Daily, Weekly, Monthly, Yearly)
+
+📝 Detailed Workout Pages
+
+🎯 Fitness Goals
+
+🧮 BMI Calculator
+
+📅 Weekly Schedule
+
+🍽️ Nutrition / Meal Plans
+
+⚙️ Server-side API Routes (Next.js)
+
+
+## 🛠️ Tech Stack
+
+Next.js 14+ (App Router)
+
+Tailwind CSS
+
+Firebase Authentication
+
+MongoDB (for workout data)
+
+Vercel Deployment
+
+React Icons
+
+## 📥 Setup & Installation
+Follow these steps to run the project locally:
+
+## 1️⃣ Clone the repository
+```bash
+git clone https://github.com/Mahmudulhasansiyam11/workoutpro-app.git
+cd workoutpro-app
+
+```
+## 2️⃣ Install dependencies
+```bash
+npm install
+
+```
+## 3️⃣ Create .env.local file
+```bash
+NEXT_PUBLIC_FIREBASE_API_KEY=your_key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_domain
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_bucket
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_id
+NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
+
+MONGODB_URI=your_mongodb_url
+
+```
+## 4️⃣ Run the project locally
+```bash
+npm run dev
+
+```
+Project will start on:
+👉 http://localhost:3000
+
+## 5️⃣ Build for production
+```bash
+npm run build
+npm start
+
+```
+
+
+## 🧭 Route Summary
+Here is a quick overview of all routes used in the project:
+
+## Main Routes
+Route             -  	Description
+/	              -     Homepage
+/workouts         -	    All Workouts from MongoDB
+/plans            - 	Workout Plans (Daily, Weekly, Monthly, Yearly)
+/trainers         - 	View Trainers & Details
+/profile          -     View profile details
+/addWorkout       -     Add new workout
+/manageWorkouts   -     Manage workout view and delete
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
