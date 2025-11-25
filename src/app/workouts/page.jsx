@@ -30,7 +30,7 @@ export default function WorkoutsPage() {
 
   if (loading) return <p className="text-center py-10">Loading workouts...</p>;
 
-  // FILTER + SEARCH LOGIC
+  // filter and search logic
   const filteredWorkouts = workouts.filter((workout) => {
     const matchesSearch =
       workout.title.toLowerCase().includes(searchQuery.toLowerCase()) ||

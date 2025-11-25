@@ -2,9 +2,9 @@
 import Image from "next/image";
 
 export default async function WorkoutDetailPage({ params }) {
-  const { id } = await params; // dynamic route param
+  const { id } = await params; 
 
-  // Fetch the workout by ID from your backend
+  
   const res = await fetch(`http://localhost:5000/allWorkOuts/${id}`, {
     cache: "no-store", 
   });
