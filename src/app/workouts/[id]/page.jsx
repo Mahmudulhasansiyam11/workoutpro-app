@@ -6,7 +6,7 @@ export default async function WorkoutDetailPage({ params }) {
 
   // Fetch the workout by ID from your backend
   const res = await fetch(`http://localhost:5000/allWorkOuts/${id}`, {
-    cache: "no-store", // optional: always get fresh data
+    cache: "no-store", 
   });
 
   // Handle fetch errors
