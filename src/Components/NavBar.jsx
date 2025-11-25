@@ -86,14 +86,14 @@ const Navbar = () => {
                       Profile
                     </Link>
                     <Link
-                      href="/add-workout"
+                      href="/addWorkout"
                       className="block px-4 py-2 text-gray-200 hover:bg-slate-700 transition"
                       onClick={() => setIsDropdownOpen(false)}
                     >
                       Add Workout
                     </Link>
                     <Link
-                      href="/manage-workouts"
+                      href="/manageWorkouts"
                       className="block px-4 py-2 text-gray-200 hover:bg-slate-700 transition"
                       onClick={() => setIsDropdownOpen(false)}
                     >
@@ -151,12 +151,12 @@ const Navbar = () => {
                     Profile
                   </button>
                 </Link>
-                <Link href="/add-workout">
+                <Link href="/addWorkout">
                   <button className="w-full px-4 py-2 rounded-lg border border-white text-white hover:bg-white hover:text-gray-900 transition">
                     Add Workout
                   </button>
                 </Link>
-                <Link href="/manage-workouts">
+                <Link href="/manageWorkouts">
                   <button className="w-full px-4 py-2 rounded-lg border border-white text-white hover:bg-white hover:text-gray-900 transition">
                     Manage Workouts
                   </button>
