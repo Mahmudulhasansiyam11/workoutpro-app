@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function WorkoutsPage() {
   const [workouts, setWorkouts] = useState([]);
@@ -125,12 +126,12 @@ export default function WorkoutsPage() {
                 </div>
 
                 {/* View Details Button */}
-                <a
+                <Link
                   href={`/workouts/${workout._id}`}
                   className="mt-auto w-full text-center py-3 bg-green-500 text-white rounded-lg font-medium hover:bg-green-600 transition shadow-md hover:shadow-lg"
                 >
                   View Details
-                </a>
+                </Link>
               </div>
             </div>
           ))}
