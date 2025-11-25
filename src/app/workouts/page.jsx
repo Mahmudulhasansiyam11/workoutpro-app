@@ -48,7 +48,7 @@ export default function WorkoutsPage() {
   const categories = ["All", "Beginner", "Intermediate", "Advanced"];
 
   return (
-    <section className="py-20 px-6 md:px-12 bg-gradient-to-b from-zinc-100 to-gray-200 dark:from-black dark:to-zinc-900">
+    <section className="py-20 px-6 md:px-12 bg-gradient-to-b from-zinc-100  to-gray-200 dark:from-black dark:to-zinc-900">
       <div className="max-w-7xl mx-auto">
         
         {/* Page Title */}
