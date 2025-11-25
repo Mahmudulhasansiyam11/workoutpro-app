@@ -16,10 +16,6 @@ This project includes both frontend UI and backend API routes deployed on Vercel
 
 📝 Detailed Workout Pages
 
-🎯 Fitness Goals
-
-🧮 BMI Calculator
-
 📅 Weekly Schedule
 
 🍽️ Nutrition / Meal Plans
