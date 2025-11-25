@@ -42,7 +42,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src="/logo.png"
+            src="https://i.ibb.co.com/1fLtKm09/logo.png"
             alt="WorkoutPro Logo"
             width={40}
             height={40}
