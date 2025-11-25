@@ -6,11 +6,22 @@
 
 // export default nextConfig;
 
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   reactCompiler: true,
+//   images: {
+//     domains: ['i.ibb.co.com'], 
+//   },
+// };
+
+// export default nextConfig;
+
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactCompiler: true,
   images: {
-    domains: ['i.ibb.co.com'], // <-- add your image host here
+    domains: ['i.ibb.co'], 
   },
 };
 

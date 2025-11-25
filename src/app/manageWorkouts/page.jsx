@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import Swal from "sweetalert2";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import Swal from "sweetalert2";
 
 export default function ManageWorkoutsPage() {
   const [workouts, setWorkouts] = useState([]);
@@ -14,7 +14,7 @@ export default function ManageWorkoutsPage() {
   // Fetch workouts
   const fetchWorkouts = async () => {
     try {
-      const res = await fetch("http://localhost:5000/allWorkOuts");
+      const res = await fetch("https://workout-pro-api-server.vercel.app/allWorkOuts");
       const data = await res.json();
       setWorkouts(data);
       setLoading(false);
@@ -45,7 +45,7 @@ export default function ManageWorkoutsPage() {
     if (!result.isConfirmed) return;
 
     try {
-      const res = await fetch(`http://localhost:5000/workOuts/${id}`, {
+      const res = await fetch(`https://workout-pro-api-server.vercel.app/workOuts/${id}`, {
         method: "DELETE",
       });
 

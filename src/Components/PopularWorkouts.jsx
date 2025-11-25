@@ -1,9 +1,9 @@
 
 "use client";
 
-import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function PopularWorkouts() {
   const [workouts, setWorkouts] = useState([]);
@@ -12,7 +12,7 @@ export default function PopularWorkouts() {
   useEffect(() => {
     const fetchWorkouts = async () => {
       try {
-        const res = await fetch("http://localhost:5000/workOuts");
+        const res = await fetch("https://workout-pro-api-server.vercel.app/workOuts");
         const data = await res.json();
         setWorkouts(data);
         setLoading(false);

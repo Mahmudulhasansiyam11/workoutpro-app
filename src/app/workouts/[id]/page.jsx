@@ -5,7 +5,7 @@ export default async function WorkoutDetailPage({ params }) {
   const { id } = await params; 
 
   
-  const res = await fetch(`http://localhost:5000/allWorkOuts/${id}`, {
+  const res = await fetch(`https://workout-pro-api-server.vercel.app/allWorkOuts/${id}`, {
     cache: "no-store", 
   });
 
